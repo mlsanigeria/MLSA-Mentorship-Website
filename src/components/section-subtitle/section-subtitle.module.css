@@ -1,0 +1,8 @@
+.text {
+	padding: 2rem;
+	max-width: 42rem;
+	margin: 0 auto;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	text-align: center;
+}

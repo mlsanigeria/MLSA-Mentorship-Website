@@ -1,0 +1,71 @@
+.testimonials {
+	background-image: linear-gradient(var(--dark-200-6), transparent 10rem);
+	padding-top: 5rem;
+  }
+  
+  .grid {
+    position: relative;
+    max-width: 24rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media screen and (min-width: 640px) {
+    .grid {
+      max-width: var(--max-width);
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+      column-gap: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid {
+      max-width: var(--max-width);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .cardSkeleton {
+    background-color: var(--dark-200);
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    animation: shimmer 1.5s ease-in-out infinite alternate;
+  }
+  
+  .avatarSkeleton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-bottom: 0.5rem;
+    animation: shimmer 1.5s ease-in-out infinite alternate;
+  }
+  
+  .textSkeleton {
+    height: 50px;
+    background-color: #ddd;
+    animation: shimmer 1.5s ease-in-out infinite alternate;
+  }
+  
+  .authorSkeleton {
+    height: 20px;
+    background-color: #ddd;
+    animation: shimmer 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -0.5px 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -0.5px 0;
+    }
+  }
+  

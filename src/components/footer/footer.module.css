@@ -1,0 +1,36 @@
+.footer {
+	width: var(--max-width);
+	margin: 0 auto;
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+.logo {
+	width: auto;
+}
+
+@media screen and (max-width: 640px) {
+	/* make footer to align item in column */
+	.footer {
+		flex-direction: column;
+	}
+}
+
+
+.fade {
+	text-align: justify;
+	opacity: 0.5;
+}
